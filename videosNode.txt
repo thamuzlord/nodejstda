@@ -1,0 +1,21 @@
+Hola mundo - https://youtu.be/oXk8zselbUs
+
+Primer Script - https://youtu.be/Oyo26WdVpsA
+
+Función Flecha - https://youtu.be/9YcMFhXiyP0
+
+Non Blocking - https://youtu.be/ndBOvxeqAEQ
+
+Callback - https://youtu.be/9LgglLjRKBY
+
+Nodemon - https://youtu.be/9rlPGEtMvNA
+
+Require Interno - https://youtu.be/0qY1jGyitmE
+
+Destructuración - https://youtu.be/dSC-g7qRmz0
+
+Require externo (Yargs) - https://youtu.be/xU6fdOvb9Vc
+
+Require Nativo - https://youtu.be/Tl2eWGSmOoY
+
+Primera Entrega - https://youtu.be/5mNl__BQ9Jgn	

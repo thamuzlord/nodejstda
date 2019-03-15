@@ -1,0 +1,2 @@
+el nombre del estudiante es: carlos
+promedio: 4

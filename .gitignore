@@ -1,2 +1,4 @@
-/node_module
+/node_modules
 /init/node_modules
+/ofertaAcademica/node_modules
+/web/node_modules

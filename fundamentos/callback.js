@@ -1,10 +1,24 @@
-let promedio2=(nota_uno,nota_dos,nota_tres, callback)=>{
+let promedio2=(mensaje, callback)=>{
 	setTimeout(function(){
-		let resultado=(nota_uno+nota_dos+nota_tres)/3;
+		let resultado="hola"+mensaje;
 		callback (resultado);	
 	},2000);	
 }
 
-promedio2(5,5,5, function(resultado){
-	console.log(resultado);
-})
+
+function mostrarMensaje(){
+
+	for (let index = 0; index < 1; index++) {
+		promedio2("mensaje", function(resultado){
+			console.log(resultado);
+		});
+		
+	}
+
+
+
+}
+
+mostrarMensaje();
+mostrarMensaje();
+mostrarMensaje();

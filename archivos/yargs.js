@@ -19,8 +19,14 @@ const creacion = {
     ingles
 }
 
+const muestraEst={
+    nombre
+}
+
 const argv = require('yargs')
 .command('crear','crear un estudiante',creacion)
+.command('mostrar','mostrar estudiantes')
+.command('mostrarEst','muestra estudiante especifico')
 .argv;
 
 module.exports = {

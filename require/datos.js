@@ -19,3 +19,5 @@ let crearArchivo = (estudiante) => {
 }
 
 crearArchivo(estudiante);
+
+console.log("hola");

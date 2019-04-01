@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const hbs = require('hbs');
+require('./helpers');
  
 const directoriopublico = path.join(__dirname,'../public');
 const directoriopartials = path.join(__dirname,'../partials');
@@ -18,7 +19,10 @@ app.get('/',(req,res)=>{
 
 app.get('/calculos',(req,res)=>{
     res.render('calculos',{
-        estudiante: 'Iza'
+        estudiante: req.query.nombre,
+        nota1: parseInt(req.query.nota1),
+        nota2: parseInt(req.query.nota2),
+        nota3: parseInt(req.query.nota3)
     });
 });
 

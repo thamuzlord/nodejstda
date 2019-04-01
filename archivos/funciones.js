@@ -56,8 +56,35 @@ const mostrarEst = (nom) => {
     }
 }
 
+const mostrarMat = () =>{
+    listar();
+    let ganan = listaEstudiantes.filter(mat => mat.matematicas >= 3 )
+    if (ganan.lenght == 0){
+        console.log('Ningun estudiante va ganando');
+    }else{
+        ganan.forEach(estudiante => {
+            console.log(estudiante.nombre);
+            console.log('notas');
+            console.log(estudiante.matematicas);     
+        })
+    }
+}
+
+const actualizar = (nom, asignatura, calificacion) =>{
+    listar();
+    let est = listaEstudiantes.find(buscar => buscar.nombre == nom)
+    if (!est) {
+        console.log('No existe el estudiante');        
+    }else{
+        est[asignatura] = calificacion;
+        guardar();
+    }
+}
+
 module.exports = {
     crear,
     mostrar,
-    mostrarEst
+    mostrarEst,
+    mostrarMat,
+    actualizar
 }

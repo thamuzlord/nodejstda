@@ -23,10 +23,23 @@ const muestrarEst={
     nombre
 }
 
+const actualiza = {
+    nombre,
+    asignatura : {
+        demand: true,
+        alias: 'a'
+    },
+    calificacion : {
+        demand : true,
+        alias: 'c'
+    }
+}
+
 const argv = require('yargs')
 .command('crear','crear un estudiante',creacion)
 .command('mostrar','mostrar estudiantes')
 .command('mostrarEst','muestra estudiante especifico',muestrarEst)
+.command('actualizar','Actualiza la informacion',actualiza)
 .argv;
 
 module.exports = {

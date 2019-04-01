@@ -16,6 +16,14 @@ switch(comando){
     funciones.mostrarEst(argv.nombre);
     break
 
+    case 'mostrarMat':
+    funciones.mostrarMat();
+    break
+
+    case 'actualizar':
+    funciones.actualizar(argv.nombre,argv.asignatura, argv.calificacion);
+    break
+
     default:
     console.log('No ingresó comando')
 }

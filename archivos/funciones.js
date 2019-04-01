@@ -42,9 +42,9 @@ const mostrar = () => {
     })
 }
 
-const mostrarest = (nombre) => {
+const mostrarEst = (nom) => {
     listar();
-    let est = listaEstudiantes.find(buscar => buscar.nombre == nombre)
+    let est = listaEstudiantes.find(buscar => buscar.nombre == nom)
     if (!est) {
         console.log('No existe el estudiante');        
     }else{
@@ -59,5 +59,5 @@ const mostrarest = (nombre) => {
 module.exports = {
     crear,
     mostrar,
-    mostrarest
+    mostrarEst
 }

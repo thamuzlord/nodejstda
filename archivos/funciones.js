@@ -59,7 +59,7 @@ const mostrarEst = (nom) => {
 const mostrarMat = () =>{
     listar();
     let ganan = listaEstudiantes.filter(mat => mat.matematicas >= 3 )
-    if (ganan.lenght == 0){
+    if (ganan.length == 0){
         console.log('Ningun estudiante va ganando');
     }else{
         ganan.forEach(estudiante => {
@@ -81,10 +81,22 @@ const actualizar = (nom, asignatura, calificacion) =>{
     }
 }
 
+const eliminar = (nom) => {
+    listar();
+    let nuevo = listaEstudiantes.filter(mat => mat.nombre != nom );
+    if (nuevo.length == listaEstudiantes.length){
+        console.log('Ningun estudiante tiene el nombre indicado');
+    }else{
+        listaEstudiantes = nuevo;
+        guardar();
+    }
+}
+
 module.exports = {
     crear,
     mostrar,
     mostrarEst,
     mostrarMat,
-    actualizar
+    actualizar,
+    eliminar
 }

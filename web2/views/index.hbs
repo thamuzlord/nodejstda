@@ -1,16 +1,10 @@
 {{>header}}
-    <p>
-        Bienvenido
-    </p>
-
-    <form action="/calculos" method="post">
-        <input type="text" name="nombre">
-        <input type="number" name="nota1">
-        <input type="number" name="nota2">
-        <input type="number" name="nota3">
-        <button>Calcular</button>
-    </form>
-
-
-    {{{listar}}}
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido al Colegio Hogwarts de Magia y Hechicería!</h1>
+        <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/a/ae/Hogwartscrest.png/revision/latest?cb=20150516174751" alt="Logo" width="15%">
+        <br>
+        <a class="btn btn-primary btn-lg" href="/listarCursos" role="button">Ver Cursos</a>
+    </div>
+</div>
 {{>footer}}

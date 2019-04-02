@@ -12,6 +12,7 @@ app.use(express.static(directoriopublico));
 hbs.registerPartials(directoriopartials);
 app.use(bodyParser.urlencoded({extended:false}));
 app.use('/css', express.static(dirNode_modules + '/bootstrap/dist/css'));
+app.use('/css', express.static(dirNode_modules + '/font-awesome/css'));
 app.use('/js', express.static(dirNode_modules + '/jquery/dist'));
 app.use('/js', express.static(dirNode_modules + '/popper.js/dist'));
 app.use('/js', express.static(dirNode_modules + '/bootstrap/dist/js'));
@@ -33,6 +34,29 @@ app.post('/calculos',(req,res)=>{
     });
 });
 
+app.get('/listarCursos',(req,res)=>{
+    res.render('listarCursos',{
+        titulo: 'Listar cursos'
+    });
+});
+
+app.get('/crearCurso',(req,res)=>{
+    res.render('crearCurso',{
+        titulo: 'Crear cursos'
+    });
+});
+
+app.post('/registrarCurso',(req,res)=>{
+    res.render('registrarCurso',{
+        idCurso: req.body.id,
+        nombreCompleto: req.body.nombre,
+        modalidad: req.body.modalidad,
+        valor: req.body.valor,
+        descripcion: req.body.descripcion,
+        intensidadHoraria: req.body.intensidad,
+        estado: true  
+    });
+});
  
 app.listen(3000, () => {
     console.log('Escuchando en el puerto 3000');    

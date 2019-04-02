@@ -3,12 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Matriculas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bootstrap.min.css"  type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.css"  type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <p>Promedio {{estudiante}}</p>
-</header>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">HOGWARTS SCHOOL</div>
+                <div class="list-group list-group-flush">
+                    <a href="/" class="list-group-item list-group-item-action bg-light">Inicio</a>
+                    <a href="/crearCurso" class="list-group-item list-group-item-action bg-light">Crear curso</a>
+                    <a href="/listarCursos" class="list-group-item list-group-item-action bg-light">Ver cursos</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Inscribir</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Ver inscritos</a>
+                </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menú</button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>

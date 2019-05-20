@@ -1,15 +1,24 @@
 {
   "name": "ofertaacademica",
   "version": "1.0.0",
-  "description": "primer app node",
+  "description": "Inscripcion a oferta academica con nodejs",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "vasco",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
     "yargs": "^13.2.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js inscribirme -i=1 -n=Carlos -c=123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thamuzlord/nodejstda/tree/master/ofertaAcademica"
+  },
+  "keywords": [
+    "oferta",
+    "academica",
+    "inscripcion"
+  ],
+  "author": "Carlos Vasco",
+  "license": "ISC"
 }
